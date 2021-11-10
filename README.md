@@ -9,7 +9,7 @@ Imagínense el código open source, o un programa elaborado por muchos programad
 y tener un registro legible de todo el desarrollo.
 
 ## ¿Qué es un repositorio?
-Básicamente es un carpeta que contiene un archivo `.git`.
+Básicamente es una carpeta que contiene un archivo `.git`.
 Sería un proyecto o carpeta la cual está enlazado a esa carpeta `.git`.
 Por lo tanto todos los archivos que estén dentro de esa carpeta estarán relacionadas al repositorio
 , sin embargo no todos los archivos tienen que estar *trackeados* por git.
@@ -32,7 +32,7 @@ Las ramas sirven para
 - Hacer copias para poder reparar algo
 
 ## Repositorio local y Repositorio remoto
-Estos coneceptos serán importantes para reconocer la diferencia entre *Git* y *GitHub*.
+Estos conceptos serán importantes para reconocer la diferencia entre *Git* y *GitHub*.
 
 ### Repositorio remoto
 Un repositorio remoto es una copia del proyecto (que suele ser la copia principal) almacenada en una plataforma online o en algún servidor o equipo externo a nuestro equipo de trabajo. Suelen haber distintas como por ejemplo:
@@ -48,13 +48,13 @@ Un *repositorio local* es una copia del proyecto la cual está almacenada en nue
 
 ---
 
-# Flujo de trabajo
-Git es escencial para poder tener un flujo de trabajo óptimo. ¿Qué debo hacer para poder comenzar? 
+# Iniciando en Git
+Aprender Git es escencial para poder tener un flujo de trabajo óptimo en tus proyectos. ¿Qué debo hacer para poder comenzar? 
 
-## Instalar Git en tu computadora
+### Instalar Git en tu computadora
 Instalar Git en tu computadora te permitirá trabajar con repositorios ya sean locales o remotos. Una vez instalado, los comandos de Git serán reconocidos en la terminal. *Si no tienes Git instalado lo puedes [descargar aquí](https://git-scm.com/downloads "Descargar")*.
 
-### El comando `git status`
+## El comando `git status`
 
 Una vez instalado, deberías poder abrir la terminal en cualquier carpeta, ingresar el comando `git status` y obtener algo parecido a alguna de estas opciones:
 
@@ -71,7 +71,7 @@ Una vez instalado, deberías poder abrir la terminal en cualquier carpeta, ingre
 
       nothing to commit, working tree clean
   Esto significa que estás ubicado en la *rama main* de tu *repositorio local*, y que ese repositorio está actualizado con el *repositorio remoto* llamado *origin/main*. *Origin* es el nombre del *repositorio remoto* que puede, por ejemplo, estar almacenado en GitHub, y *main* es el nombre de la rama que existe en ese repositorio, que por cierto, está sincronizada con la rama *main* de nuestro *repositorio local*.
-  Por último `nothing to commit. working tree clean` significa que no hay nada que esté listo para hacer un `commit`, pero veremos eso luego.
+Por último `nothing to commit. working tree clean` significa que no hay nada que esté listo para hacer un *commit*, pero veremos eso luego.
 
 ## Iniciando un repositorio
 En cierta manera pueden haber tres formas para iniciar un repositorio (o por lo menos las que yo utilizo):
@@ -109,7 +109,7 @@ En cierta manera pueden haber tres formas para iniciar un repositorio (o por lo 
     - En este caso si sólo quisiéramos agregar el archivo `main.py`a nuestro repositorio, tendríamos que hacer `git add main.py`.
     - Por otro lado si quisiéramos agregar todos los archivos a la vez utilizamos `git add .`.
 
-Hay que señalar que en ambos casos (*caso 1 y 2*), el repositorio aún no está sincronizado con un *repositorio remoto*. Luego podremos hacer esto con el comando `git remote add <nombre del repositorio> <url del repositorio>>`.
+Hay que señalar que en ambos casos (*caso 1 y 2*), el repositorio aún no está sincronizado con un *repositorio remoto*. Luego podremos hacer esto con el comando `git remote add <nombre del repositorio> <url del repositorio>`.
 
 3. **Clonar un repositorio remoto en nuestra computadora**
 
@@ -171,3 +171,12 @@ Dentro de los comandos más importantes están los siguientes:
 - Borrar un *branch*
 
   `git branch --delete <nombre de la rama>`
+
+- Sincronizar el *repositorio local* con un *repositorio remoto*
+
+  `git remote add <nombre del repositorio> <url del repositorio>`
+
+---
+
+#Referencias
+- [Configuración de un repositorio | Atlassian - Bitbucket](https://www.atlassian.com/es/git/tutorials/setting-up-a-repository "Tutorial")
