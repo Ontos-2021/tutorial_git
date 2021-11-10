@@ -178,5 +178,5 @@ Dentro de los comandos más importantes están los siguientes:
 
 ---
 
-#Referencias
+# Referencias
 - [Configuración de un repositorio | Atlassian - Bitbucket](https://www.atlassian.com/es/git/tutorials/setting-up-a-repository "Tutorial")
