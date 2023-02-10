@@ -290,6 +290,10 @@ Dentro de los comandos más importantes están los siguientes:
 
   `git branch --delete <nombre de la rama>`
 
+- Listar todas las ramas existentes (incluídas las remotas)
+
+  `git branch --all`
+
 - Sincronizar el *repositorio local* con un *repositorio remoto*
 
   `git remote add <nombre del repositorio> <url del repositorio>`
@@ -302,7 +306,25 @@ Dentro de los comandos más importantes están los siguientes:
   
   `git config --global user.email`
     
-    Para modificar el nombre de usuario o el de Email simplemente escribe el valor correspondiente 
+  Pd: Para modificar el nombre de usuario o el de Email simplemente escribe el valor correspondiente
+
+  Como por ejemplo `git config --global user.email miemail@email.com`
+
+- Para listar los repositorios remotos que tienes
+
+  `git remote add <nombre del repositorio remoto> <url del repositorio remoto>`
+
+- Comando para configurar el repositorio remoto para hacer push
+
+  `git push --set-upstream <nombre del repositorio remoto> <nombre de la rama>`
+
+  Como por ejemplo `git push --set-upstream origin main`
+
+- Comando para borrar un repositorio remoto
+
+  `git remote remove <nombre del repositorio remoto>`
+
+  Como por ejemplo `git remote remove origin`
 
 ---
 
