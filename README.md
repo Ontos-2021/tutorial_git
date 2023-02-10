@@ -294,6 +294,16 @@ Dentro de los comandos más importantes están los siguientes:
 
   `git remote add <nombre del repositorio> <url del repositorio>`
 
+- Checkear el nombre de usuario global de git
+  
+  `git config --global user.name`
+
+- Checkear el email de usuario global de git
+  
+  `git config --global user.email`
+    
+    Para modificar el nombre de usuario o el de Email simplemente escribe el valor correspondiente 
+
 ---
 
 # Referencias
